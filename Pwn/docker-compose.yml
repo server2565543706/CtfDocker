@@ -1,0 +1,60 @@
+version: "2"
+
+services:
+
+  sdcit-2023wxb-pwn1:
+    build: ./pwn1 #这里写路径
+    restart: always
+    ports:
+      - "9000:80" #这里写端口
+    environment:
+      - FLAG=flag{Sdcit-UL8FwU74xjENFrqpsHQcsZ2w7lg1kTZ0UvhB4BKV-2023wxb} #这里写FLAG
+  sdcit-2023wxb-pwn2:
+    build: ./pwn2
+    restart: always
+    ports:
+      - "9001:80"
+    environment:
+      - FLAG=flag{Sdcit-x1vn9ZkIYMVI3lQBJTjY1JNMTsfJdrzkUMjjJtgZ-2023wxb}
+  sdcit-2023wxb-pwn3:
+    build: ./pwn3
+    restart: always
+    ports:
+      - "9002:80"
+    environment:
+      - FLAG=flag{Sdcit-7dcZF987eH7SZDlQf4CRE9tP1YAYdEOqaFyZKfwJ-2023wxb}
+  sdcit-2023wxb-pwn4:
+    build: ./pwn4
+    restart: always
+    ports:
+      - "9003:80"
+    environment:
+      - FLAG=flag{Sdcit-rGdBzxg2mabubZAJmqhwkZI7Ymwsc8OXc061YRBs-2023wxb}
+  sdcit-2023wxb-pwn5:
+    build: ./pwn5
+    restart: always
+    ports:
+      - "9004:80"
+    environment:
+      - FLAG=flag{Sdcit-KhQK21ytoKSpwratPYKsEoZigu6CfSIG8YxtFQPA-2023wxb}
+  sdcit-2023wxb-pwn6:
+    build: ./pwn6
+    restart: always
+    ports:
+      - "9005:80"
+    environment:
+      - FLAG=flag{Sdcit-vFVNkSfaQo6LSys7e7fWyMhVfmFLWVBcfr7U4vV9-2023wxb}
+  sdcit-2023wxb-pwn7:
+    build: ./pwn7
+    restart: always
+    ports:
+      - "9006:80"
+    environment:
+      - FLAG=flag{Sdcit-ePkhQIDI4kFjCcVLHOu1dQbwfCFwYmR5ucyRedmP-2023wxb}
+  sdcit-2023wxb-pwn8:
+    build: ./pwn8
+    restart: always
+    ports:
+      - "9007:80"
+    environment:
+      - FLAG=flag{Sdcit-c1n9i1GCmmLvyrBU6R6GSdBzGROdrQRy46pWxE48-2023wxb}
